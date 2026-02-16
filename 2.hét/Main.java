@@ -18,11 +18,7 @@ public class Main {
         mpBekeres();
 
         fel(3);
-        System.out.println("Add meg az életkorod:");
-        int age =  sc.nextInt();
-        System.out.println(String.format("*".repeat(age)));
-        System.out.println(String.format("|".repeat(age)));
-        System.out.println(String.format("-".repeat(age)));
+        harmadikFeladat();
 
     }
 
@@ -38,6 +34,19 @@ public class Main {
             mpBekeres();
         }else {
             System.out.println(String.format("%d méterre volt a villám", time*300));
+        }
+    }
+
+    public static void harmadikFeladat() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Add meg az életkorod:");
+        int age =  sc.nextInt();
+        if (age > 20 || age < 0) {
+            harmadikFeladat();
+        }else {
+            System.out.println(String.format("*".repeat(age)));
+            System.out.println(String.format("|".repeat(age)));
+            System.out.println(String.format("-".repeat(age)));
         }
     }
 }
