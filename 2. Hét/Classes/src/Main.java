@@ -13,6 +13,9 @@ public class Main {
         s1.add_a_grade(5);
         s1.add_a_grade(5);
         s1.show_average();
+
+        System.out.println(MathUtils.multiply(2, 3));
+        System.out.println(MathUtils.multiply(2,2,2));
     }
     private static void newLine() {
         System.out.println();
